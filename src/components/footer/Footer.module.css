@@ -1,0 +1,17 @@
+.footer {
+    background-color: #6b9ce3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerContainer {
+    flex-direction: column;
+}
+
+.footerItems {
+    width: 40%;
+    min-width: 250px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
