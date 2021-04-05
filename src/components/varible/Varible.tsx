@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Varible.module.css'
+import s from './Varible.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
 
 const Variable = () => {

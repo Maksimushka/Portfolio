@@ -1,18 +1,20 @@
 import React from 'react';
-import s from './Skills.module.css'
+import s from './Skills.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
 import Skill from './skill/Skill';
+import HeadOfBlock from "../head-of-block/HeadOfBlock";
 
 const Skills = () => {
 
     const skills = ['React', 'HTML', 'Css', 'Redux', 'Git', 'Redux-saga']
+    let description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut, illum. Atque cum dicta enim expedita reiciendis repudiandae suscipit veritatis?'
 
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2>Skills</h2>
+                <HeadOfBlock description={description} title={'My skills'} subtitle={'What can I do?'} />
                 <div className={s.skills}>
-                    {skills.map( el => <Skill skill={el} />)}
+                    {skills.map( el => <Skill key={el} skill={el} />)}
                 </div>
             </div>
         </div>

@@ -1,0 +1,32 @@
+.head {
+  min-height: 215px;
+  text-align: center;
+  font-family: "Montserrat", serif;
+
+  .subTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d1d1d1;
+    line-height: 26px;
+    display: block;
+    font-family: "Montserrat", serif;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Montserrat", serif;
+  }
+
+  p {
+    font-size: 18px;
+    color: #d0d0d0;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
