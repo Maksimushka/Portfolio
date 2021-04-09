@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
+import styleContainer from '../../../common/styles/Container.module.css'
 import Project from './project/Project';
-import HeadOfBlock from '../head-of-block/HeadOfBlock';
+import HeadOfBlock from '../../reuse-components/head-of-block/HeadOfBlock';
 
 const Projects = () => {
     let description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tempora.' +

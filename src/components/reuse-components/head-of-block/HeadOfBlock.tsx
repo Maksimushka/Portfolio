@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './HeadOfBlock.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
+import styleContainer from '../../../common/styles/Container.module.css'
 
 const HeadOfBlock = (props: { title: string, subtitle: string, description: string }) => {
     return (

@@ -1,0 +1,54 @@
+.formBlock {
+    width: 100%;
+    background-color: #2b2b2b;
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 250px;
+            margin-bottom: 20px;
+
+            .input {
+                width: 50%;
+                min-width: 250px;
+                border-radius: 10px;
+                border: 1px solid black;
+                padding: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .area {
+                width: 50%;
+                min-width: 250px;
+                border-radius: 10px;
+                padding: 10px;
+                height: 100px;
+                border: 1px solid black;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .formBlockButton {
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid black;
+        }
+    }
+}

@@ -5,7 +5,7 @@ const NavBar: React.FC = () => {
     return (
         <div className={s.navBar}>
             <a href="">Главная</a>
-            <a href="">Скиллы</a>
+            <a href="">Навыки</a>
             <a href="">Проекты</a>
             <a href="">Контакты</a>
         </div>

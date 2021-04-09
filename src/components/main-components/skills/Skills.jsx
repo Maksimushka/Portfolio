@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Skills.module.scss'
-import styleContainer from './../../common/styles/Container.module.css'
+import styleContainer from '../../../common/styles/Container.module.css'
 import Skill from './skill/Skill';
-import HeadOfBlock from "../head-of-block/HeadOfBlock";
+import HeadOfBlock from "../../reuse-components/head-of-block/HeadOfBlock";
 
 const Skills = () => {
 
