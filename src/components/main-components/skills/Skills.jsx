@@ -12,7 +12,7 @@ const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <HeadOfBlock description={description} title={'My skills'} subtitle={'What can I do?'} />
+                <HeadOfBlock description={description} title={'Мои навыки'} subtitle={'Что я умею?'} />
                 <div className={s.skills}>
                     {skills.map( el => <Skill key={el} skill={el} />)}
                 </div>

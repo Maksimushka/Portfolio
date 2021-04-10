@@ -1,31 +1,42 @@
+@import "../../../common/styles/scss/variables";
+
 .head {
-  min-height: 215px;
   text-align: center;
-  font-family: "Montserrat", serif;
+  margin-bottom: 45px;
 
   .subTitle {
     font-size: 16px;
     font-weight: 600;
-    color: #d1d1d1;
+    color: $secondaryTextColor;
     line-height: 26px;
     display: block;
-    font-family: "Montserrat", serif;
   }
 
   .title {
     text-align: center;
-    margin: 0;
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 18px;
+    margin: 0 0 30px;
     font-weight: 700;
-    color: #fff;
-    font-family: "Montserrat", serif;
+    color: $mainTextColor;
+    position: relative;
+    font-family: $secondaryTextColor;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $otherBhColor;
+      width: 75px;
+      height: 2px;
+      bottom: -20px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
   }
 
   p {
     font-size: 18px;
-    color: #d0d0d0;
+    color: $secondaryTextColor;
     max-width: 720px;
     margin: 0 auto;
   }

@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     return (
         <div className={s.footer}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h2>Maxim Bill</h2>
+                <h2>Биль Максим</h2>
                 <div className={s.footerItems}>
                     <FooterItem />
                     <FooterItem />

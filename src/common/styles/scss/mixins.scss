@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin mainText() {
+  color: $mainTextColor;
+  font-size: 20px;
+  font-family: $secondaryFontFamily;
+}
+
+@mixin secondaryText() {
+  color: $secondaryTextColor;
+  font-size: 16px;
+}

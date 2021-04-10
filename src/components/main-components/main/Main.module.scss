@@ -1,15 +1,36 @@
+@import "../../../common/styles/scss/variables";
+
 .main {
-    height: 100vh;
-    background-color: #202020;
-}
+  height: 100vh;
+  background-color: $mainBgColor;
+  display: flex;
 
-.text {
-    background-color: white;
-    width: 300px;
-}
+  .text {
 
-.photo {
+    color: $mainTextColor;
+    width: 330px;
+
+    h1{
+      font-family: $secondaryFontFamily;
+      font-size: 38px;
+    }
+
+    span {
+      font-size: 18px;
+      color: $secondaryTextColor;
+    }
+
+    p {
+      font-size: 20px;
+      color: $secondaryTextColor;
+    }
+  }
+
+  .photo {
     background-color: white;
     width: 300px;
     height: 350px;
+  }
+
 }
+

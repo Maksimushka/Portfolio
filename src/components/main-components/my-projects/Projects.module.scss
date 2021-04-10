@@ -1,7 +1,8 @@
+@import "../../../common/styles/scss/variables";
+
 .projectsBlock {
-    padding: 50px 0;
     width: 100%;
-    background-color: #202020;
+    background-color: $mainBgColor;
 
     .projectsContainer {
         display: flex;
@@ -13,8 +14,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
-        border: 1px solid black;
+        align-items: flex-start;
     }
 
     @media screen and (max-width: 1270px) {

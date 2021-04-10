@@ -1,5 +1,5 @@
-import React from 'react';
-import s from './FooterItem.module.css'
+import React from 'react'
+import s from './../Footer.module.scss'
 
 const FooterItem: React.FC = () => {
     return (
