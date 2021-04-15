@@ -9,12 +9,29 @@ const Contacts = () => {
         <div className={s.formBlock}>
             <div className={`${styleContainer.container} ${s.formContainer}`}>
                 <HeadOfBlock description={description} title={'Контакты'} subtitle={'Как можно со мной связаться?'} />
-                <form className={s.form} action="">
-                    <input className={s.input} placeholder={'Name'} type="text"/>
-                    <input className={s.input} placeholder={'Email'} type="text"/>
-                    <textarea className={s.area} placeholder={'Your message'} />
-                </form>
-                <button className={s.formBlockButton}>Send</button>
+                <div className={s.contactsBlock}>
+                    <form className={s.form} action="">
+                        <input className={s.input} placeholder={'Name'} type="text"/>
+                        <input className={s.input} placeholder={'Email'} type="text"/>
+                        <textarea className={s.area} placeholder={'Your message'} />
+                        <input value='Send' type='submit' className={s.formBlockButton} />
+                    </form>
+                    <div className={s.contactsInfo}>
+                        <div className={s.contactsInfoItem}>
+                            <h4>Моё местоположение</h4>
+                            <span>Россия, Новосибирск</span>
+                        </div>
+                        <div className={s.contactsInfoItem}>
+                            <h4>Номер телефона</h4>
+                            <span>8-923-182-80-66</span>
+                        </div>
+                        <div className={s.contactsInfoItem}>
+                            <h4>Email</h4>
+                            <span>m.billsrc@gmail.com</span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     );

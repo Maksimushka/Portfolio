@@ -1,14 +1,13 @@
 @import "../../../common/styles/scss/variables";
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $mainBgColor;
-  display: flex;
 
   .text {
 
     color: $mainTextColor;
-    width: 330px;
+    width: 400px;
 
     h1{
       font-family: $secondaryFontFamily;
@@ -28,9 +27,29 @@
 
   .photo {
     background-color: white;
-    width: 300px;
-    height: 350px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    width: 400px;
+    height: auto;
+
+    img {
+      height: auto;
+      width: 100%;
+      max-width: 720px;
+    }
   }
 
+
+
+  @media screen and (max-width: 1017px) {
+    .text {
+      margin-bottom: 30px;
+    }
+    .container {
+      justify-content: center;
+    }
+
+  }
 }
 

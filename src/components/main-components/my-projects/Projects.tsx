@@ -23,6 +23,7 @@ const Projects = () => {
                     {
                         projects.map(el => {
                             return <Project
+                                key={el.title}
                                 name={el.title}
                                 style={el.style}
                                 description={el.description}/>

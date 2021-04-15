@@ -10,47 +10,136 @@
         align-items: center;
         justify-content: space-between;
 
-        .form {
+        .contactsBlock {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            width: 80%;
-            align-items: center;
-            justify-content: space-around;
-            min-height: 250px;
-            margin-bottom: 20px;
+            min-height: 450px;
+            justify-content: space-between;
+            background-color: $mainBgColor;
+            box-sizing: border-box;
+            padding: 40px 40px;
+            border-radius: 10px;
 
-            .input {
-                width: 50%;
-                min-width: 250px;
-                border-radius: 10px;
-                border: 1px solid black;
-                padding: 10px;
+            .form {
+                display: flex;
+                flex-direction: column;
+                width: 55%;
+                align-items: center;
+                justify-content: space-around;
+                min-height: 370px;
+                border-right: 1px solid white;
 
-                &:focus {
-                    outline: none;
+                .input {
+                    box-sizing: border-box;
+                    width: 80%;
+                    min-width: 250px;
+                    padding: 0 20px;
+                    border-radius: 25px;
+                    height: 45px;
+                    border: 1px solid #3a3939;
+                    background-color: transparent;
+                    color: #fff;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .area {
+                    width: 80%;
+                    min-width: 250px;
+                    box-sizing: border-box;
+                    min-height: 120px;
+                    padding: 20px 20px;
+                    resize: none;
+
+                    border-radius: 25px;
+                    height: 45px;
+                    border: 1px solid #3a3939;
+                    background-color: transparent;
+                    color: #fff;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .formBlockButton {
+                    width: 200px;
+                    height: 50px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border: none;
+                    -webkit-transition: all 0.3s ease-in;
+                    -moz-transition: all 0.3s ease-in;
+                    -o-transition: all 0.3s ease-in;
+                    transition: all 0.3s ease-in;
+                    cursor: pointer;
+
+                    background-color: #313335;
+                    line-height: 45px;
+                    border-radius: 30px;
+
+
+                    &:hover {
+                        color: black;
+                        background-color: white;
+                    }
                 }
             }
 
-            .area {
-                width: 50%;
-                min-width: 250px;
-                border-radius: 10px;
-                padding: 10px;
-                height: 100px;
-                border: 1px solid black;
+            .contactsInfo {
+                width: 35%;
+                display: flex;
+                flex-direction: column;
 
-                &:focus {
-                    outline: none;
+                .contactsInfoItem {
+                    width: 90%;
+                    min-width: 230px;
+                    border-bottom: 1px solid $otherBhColor;
+                    padding-bottom: 15px;
+
+                    h4 {
+                        text-align: left;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: $mainTextColor;
+                        font-family: "Montserrat", sans-serif;
+                    }
+
+                    span {
+                        display: block;
+                        text-align: left;
+                    }
                 }
             }
         }
 
-        .formBlockButton {
-            width: 120px;
-            height: 40px;
-            border-radius: 10px;
-            outline: none;
-            border: 1px solid black;
+        @media screen and (max-width: 900px){
+            .contactsBlock {
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 30px;
+
+                .form {
+                    border-right: 0;
+                    width: 90%;
+                }
+
+                .contactsInfo {
+                    max-width: 500px;
+                    padding: 25px 0;
+                    width: 100%;
+
+                    .contactsInfoItem {
+                        width: 100%;
+                    }
+                }
+            }
+
         }
     }
 }
