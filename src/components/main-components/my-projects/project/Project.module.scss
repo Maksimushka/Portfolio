@@ -1,5 +1,9 @@
 @import "../../../../common/styles/scss/variables";
 
+* a {
+    text-decoration: none;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -18,8 +22,21 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+        transition: all 0.55s ease-in;
+
+        &:hover {
+            .imageBlockLinks {
+                display: flex;
+                flex-direction: column;
+            }
+            &:before {
+                display: block;
+                transition: all 0.25s ease-in;
+            }
+        }
 
         &::before {
+            display: none;
             content: '';
             position: absolute;
             background-color: $mainBgColor;
@@ -28,33 +45,43 @@
             bottom: 0;
             left: 0;
             right: 0;
+            transition: all 0.25s ease-in;
         }
 
-        .imageBlockButton {
-            height: 50px;
-            font-size: 18px;
-            background-color: $otherBhColor;
-            color: $mainTextColor;
-            overflow: hidden;
-            position: relative;
-            z-index: 1;
-            border: 0;
-            width: 162px;
-            border-radius: 30px;
-            cursor: pointer;
-            outline: none;
-            text-transform: uppercase;
+        .imageBlockLinks {
+            display: none;
 
-            &:hover {
-                background-color: #fff;
-                color: $otherTextColor;
+            .imageBlockLink {
+                height: 45px;
+                font-size: 16px;
+                background-color: $otherBhColor;
+                color: $mainTextColor;
+                overflow: hidden;
+                position: relative;
+                padding-top: 10px;
+                box-sizing: border-box;
+                z-index: 1;
+                border: 0;
+                width: 152px;
+                border-radius: 30px;
+                cursor: pointer;
+                outline: none;
+                text-transform: uppercase;
+                margin-bottom: 20px;
                 transition: all 0.25s ease-in;
-            }
 
-            &:active {
-                background-color: $mainBgColor;
+                &:hover {
+                    background-color: #fff;
+                    color: $otherTextColor;
+                    transition: all 0.25s ease-in;
+                }
+
+                &:active {
+                    background-color: $mainBgColor;
+                }
             }
         }
+
     }
 
     .descriptionBlock {

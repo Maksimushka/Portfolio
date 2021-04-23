@@ -1,17 +1,15 @@
 import React from 'react';
 import s from './Skill.module.scss'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
 
 const Skill = (props) => {
 
     return (
         <div className={s.skill}>
-            <div className={s.icon}></div>
-            <h3>{props.skill}</h3>
-            <div className={s.description}>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-                Mollitia, optio.
-            </div>
+            <FontAwesomeIcon className={s.icon} icon={props.icon}/>
+            <h3>{props.title}</h3>
+            <div className={s.description}>{props.text}</div>
         </div>
     );
 };

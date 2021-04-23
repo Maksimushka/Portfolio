@@ -5,7 +5,7 @@ import photo from './../../../assets/MyPhotoOld.jpg'
 
 const Main = () => {
     return (
-        <div className={s.main}>
+        <div id='main' className={s.main}>
             <div className={`${styleContainer.container} ${s.container}`}>
                 <div className={s.text}>
                     <span>Всем привет!</span>

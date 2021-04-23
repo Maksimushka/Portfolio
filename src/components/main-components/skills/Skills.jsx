@@ -3,20 +3,31 @@ import s from './Skills.module.scss'
 import styleContainer from '../../../common/styles/Container.module.css'
 import Skill from './skill/Skill';
 import HeadOfBlock from "../../reuse-components/head-of-block/HeadOfBlock";
+import {faSketch} from "@fortawesome/free-brands-svg-icons";
+import {faCubes} from "@fortawesome/free-solid-svg-icons";
+import {faCode} from "@fortawesome/free-solid-svg-icons";
+import {faVials} from "@fortawesome/free-solid-svg-icons";
+import Fade from 'react-reveal/Fade'
 
 const Skills = () => {
 
-    const skills = ['React', 'HTML', 'Css', 'Redux', 'Git', 'Redux-saga']
-    let description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut, illum. Atque cum dicta enim expedita reiciendis repudiandae suscipit veritatis?'
+    const skills = [
+        {title: 'Технологии', icon: faCode, text: 'React, Redux, Axios, Thunk, Git, Formik'},
+        {title: 'Основы', icon: faCubes, text: 'ES6, HTML5, CSS3, TypeScript, REST API'},
+        {title: 'Дизайн', icon: faSketch, text: 'Scss, Flex-box, Grid, Material-UI'},
+        {title: 'Тестирование', icon: faVials, text: 'Jest, Unit tests, storybook, snapShot'},
+    ]
 
     return (
-        <div className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <HeadOfBlock description={description} title={'Мои навыки'} subtitle={'Что я умею?'} />
-                <div className={s.skills}>
-                    {skills.map( el => <Skill key={el} skill={el} />)}
+        <div id='skills' className={s.skillsBlock}>
+            <Fade triggerOnce direction={'bottom-left'}>
+                <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+                    <HeadOfBlock title={'Мои навыки'} subtitle={'Что я умею?'} />
+                    <div className={s.skills}>
+                        {skills.map( el => <Skill key={el.title} text={el.text} title={el.title} icon={el.icon} />)}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 };
