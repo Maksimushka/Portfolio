@@ -3,9 +3,10 @@ import s from './Projects.module.scss'
 import styleContainer from '../../../common/styles/Container.module.css'
 import Project from './project/Project';
 import HeadOfBlock from '../../reuse-components/head-of-block/HeadOfBlock';
-import todoImg from './../../../assets/todolist.png'
+import todoImg from '../../../assets/todolist.png'
 import converterImg from './../../../assets/converter.png'
 import socialNetImg from './../../../assets/social-network.jpg'
+import counterImg from './../../../assets/AAA.png'
 // @ts-ignore
 import Fade from 'react-reveal/Fade'
 
@@ -16,7 +17,7 @@ const Projects = () => {
     let projects = [
         {title: 'TodoList', description: headDescription, style: {backgroundImage: `url(${todoImg})`},
             sourceLink: 'https://github.com/Maksimushka/ToDoList',
-            demoLink: 'https://maksimushka.github.io/Currency-Converter/'
+            demoLink: 'https://maksimushka.github.io/ToDoList'
         },
         {title: 'Currency converter', description: headDescription, style: {backgroundImage: `url(${converterImg})`},
             sourceLink: 'https://github.com/Maksimushka/Currency-Converter',
@@ -26,9 +27,9 @@ const Projects = () => {
             sourceLink: 'https://github.com/Maksimushka/Social_Network',
             demoLink: 'https://maksimushka.github.io/Social_Network/'
         },
-        {title: 'Counter', description: headDescription, style: {backgroundImage: `url(${socialNetImg})`},
-            sourceLink: 'https://github.com/Maksimushka/Social_Network',
-            demoLink: 'https://maksimushka.github.io/Social_Network/'
+        {title: 'Counter', description: headDescription, style: {backgroundImage: `url(${counterImg})`},
+            sourceLink: 'https://github.com/Maksimushka/Counter',
+            demoLink: 'https://maksimushka.github.io/Counter/'
         },
     ]
 
@@ -36,7 +37,7 @@ const Projects = () => {
         <div id='projects' className={s.projectsBlock}>
             <Fade>
                 <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                    <HeadOfBlock description={headDescription} title={'Мои проекты'} subtitle={'Портфолио'} />
+                    <HeadOfBlock title={'Мои проекты'} subtitle={'Портфолио'} />
                     <div className={s.projects}>
                         {
                             projects.map(el => {

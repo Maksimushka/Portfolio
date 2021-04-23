@@ -16,6 +16,7 @@ const NavBar: React.FC<BlockNamesType> = ({blockNames}) => {
             {
                 blockNames.map(el => {
                     return <Link
+                        key={el.name}
                         activeClass={s.active}
                         to={el.link}
                         spy={true}

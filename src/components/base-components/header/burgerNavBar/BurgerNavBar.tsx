@@ -16,6 +16,7 @@ const BurgerNavBar: React.FC<BlockNamesType> = ({blockNames}) => {
                 {
                     blockNames.map(el => {
                         return <Link
+                            key={el.name}
                             onClick={() => setIsOpen(false)}
                             activeClass={s.active}
                             to={el.link}
