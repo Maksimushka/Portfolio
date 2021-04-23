@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 600px){
+        display: none;
+    }
+
     a {
         color: #d0d0d0;
         text-decoration: none;
@@ -34,7 +38,6 @@
             color: white;
         }
     }
-
     .active {
         color: white;
         &:after {
@@ -43,17 +46,6 @@
             top: 100%;
             left: 0;
             width: 0;
-            background-color: white;
-            position: absolute;
-            transition: all 0.3s ease-in-out 0s;
-        }
-
-        &:after {
-            content: '';
-            height: 2px;
-            top: 100%;
-            left: 0;
-            width: 100%;
             background-color: white;
             position: absolute;
             transition: all 0.3s ease-in-out 0s;
