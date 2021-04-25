@@ -28,13 +28,16 @@ const Form = () => {
         <form onSubmit={formik.handleSubmit} className={s.form}>
             <input {...formik.getFieldProps('user_name')} className={s.input} placeholder={'Name'} type="text"/>
             {formik.touched.user_name && Boolean(formik.errors.user_name) && <div>{formik.errors.user_name}</div>}
+
             <input {...formik.getFieldProps('user_email')} className={s.input} placeholder={'Email'} type="text"/>
             {formik.touched.user_email && Boolean(formik.errors.user_email) && <div>{formik.errors.user_email}</div>}
+
             <textarea {...formik.getFieldProps('user_message')} name='user_message' className={s.area} placeholder={'Your message'} />
             {formik.touched.user_message && Boolean(formik.errors.user_message) && <div>{formik.errors.user_message}</div>}
+
             <input value='Send' type='submit' className={s.formBlockButton} />
         </form>
     );
-};
+}
 
 export default Form;

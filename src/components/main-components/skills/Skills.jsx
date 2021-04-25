@@ -14,7 +14,7 @@ const Skills = () => {
     const skills = [
         {title: 'Технологии', icon: faCode, text: 'React, Redux, Axios, Thunk, Git, Formik'},
         {title: 'Основы', icon: faCubes, text: 'ES6, HTML5, CSS3, TypeScript, REST API'},
-        {title: 'Дизайн', icon: faSketch, text: 'Scss, Flex-box, Grid, Material-UI'},
+        {title: 'Дизайн', icon: faSketch, text: 'Scss, Material-UI, Ant design'},
         {title: 'Тестирование', icon: faVials, text: 'Jest, Unit tests, storybook, snapShot'},
     ]
 

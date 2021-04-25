@@ -6,12 +6,14 @@ import s from './AboutMe.module.scss'
 import Fade from 'react-reveal/Fade'
 
 const AboutMe = () => {
-    let description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, magnam!'
     return (
         <div id='aboutMe' className={s.aboutMeBlock}>
             <Fade>
-                <div className={`${styleContainer.container} ${s.progressContainer}`}>
-                    <HeadOfBlock description={description} title={'Обо мне'} subtitle={'Расскажу немного о себе'} />
+                <div className={`${styleContainer.container} ${s.aboutContainer}`}>
+                    <HeadOfBlock title={'Обо мне'} subtitle={'Расскажу немного о себе'} />
+                    <div className={s.aboutMe}>
+                        Я Frontend developer. Создаю SPA с помощью TypeScript/React/Redux. Люблю решать задачи на Codewars, смотреть обучающие видео, читать статьи и изучать новые технологии. В данный момент я занимаюсь front-end разработкой, но в будующем хочу двигаться в сторону fullstack разработчика. Открыт к Ващим предолжениям.
+                    </div>
                 </div>
             </Fade>
         </div>

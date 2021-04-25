@@ -92,6 +92,10 @@
       text-align: left;
       width: 100%;
       color: $secondaryTextColor;
+
+      div {
+        margin-bottom: 15px;
+      }
     }
   }
 }
